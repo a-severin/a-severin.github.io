@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="О чёмТак случилось, что область моих интересов - это desktop-ные приложения для автоматизации всяких интересных штук в проектировании и конструировании. Такие приложения часто не тривиальны в своей ло">
+<meta name="keywords" content=".NET,WPF,MVVM,Architecture">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Об WPF&#x2F;MVVM">
+<meta property="og:url" content="https://a-severin.github.io/drafts/WPF-MVVM.html">
+<meta property="og:site_name" content="Thirteenth notes">
+<meta property="og:description" content="О чёмТак случилось, что область моих интересов - это desktop-ные приложения для автоматизации всяких интересных штук в проектировании и конструировании. Такие приложения часто не тривиальны в своей ло">
+<meta property="og:updated_time" content="2020-07-11T23:28:12.769Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Об WPF&#x2F;MVVM">
+<meta name="twitter:description" content="О чёмТак случилось, что область моих интересов - это desktop-ные приложения для автоматизации всяких интересных штук в проектировании и конструировании. Такие приложения часто не тривиальны в своей ло">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Об WPF/MVVM</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+</head>
+
+<body>
+    
+    <div class="content index width mx-auto px2 my4">
+        
+          <header id="header">
+  <a href="/">
+  
+    
+      <div id="logo" style="background-image: url(/images/logo.png);"></div>
+    
+  
+    <div id="title">
+      <h1>Thirteenth notes</h1>
+    </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fa fa-bars fa-2x"></i></a>
+      </li>
+       
+        <li><a href="/">Home</a></li>
+       
+        <li><a href="/path/">Path</a></li>
+       
+        <li><a href="/CV/">CV</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="О-чём"><a href="#О-чём" class="headerlink" title="О чём"></a>О чём</h1><p>Так случилось, что область моих интересов - это desktop-ные приложения для автоматизации всяких интересных штук в проектировании и конструировании. Такие приложения часто не тривиальны в своей логике и требуют быстрого развития от начальной идеи до готового к внедрению решения.<br>Оказалось, что увлеченно добавляя новые фичи легко привести кодовую базу к совершенно неподдерживаемому состоянию. С опытом, исправляя свои огрехи, стали вырабатываться правила. Правила, которые позволяют не замедлять темп развития приложения. Правила, которые не допускают попадания в точку, когда всё надо переписать с нуля. Эта статья об этих правилах и их мотивах.</p>
+<h1 id="Матчасть"><a href="#Матчасть" class="headerlink" title="Матчасть"></a>Матчасть</h1><p>Архитектурный паттерн <em>MVVM</em>, потомок <em>MVP</em> и <em>MVC</em>, описывает структуру приложения с тремя слоями <em>Model</em>, <em>View</em>, <em>ViewModel</em>, назначение каждого слоя и взаимодействие между ними.<br>Цель применения этого паттерна - упростить работу с кодом.<br>Особенность кода приложения с GUI - ужасно большой объем кода описывающий GUI и высокая связанность его частей и элементов. Часто компоненты GUI имеют столь сложные и запутанные взаимосвязи, что выразить их в понятном и хорошо структурированном коде - не простая задача.<br><em>WPF/MVVM</em> подсказывает нам первые шаги к борьбе с этой сложностью:</p>
+<ul>
+<li>разделить код бизнес логики и код графического представления по разным слоям (View - Model)</li>
+<li>декларативный код для GUI (XAML)</li>
+<li>механизм для упрощения создания связей (Binding, INotifyPropertyChanged, INotifyCollectionChanged)</li>
+<li>механизм передачи взаимодействия с пользователем (ICommand)</li>
+<li>разделение структуры GUI и оформления (Style)</li>
+</ul>
+<h1 id="На-практике"><a href="#На-практике" class="headerlink" title="На практике"></a>На практике</h1><p>Говоря о всей кодовой базе desktop приложения, недостаточно рассмотреть <em>MVVM</em>. Для полноты картины нужно брать во внимание принципы проектирования SOLID, компонентный подход и общие правила чистого кода. Но, по моему опыту, эти “общие” вещи и выпадают из поля зрения разработчика и в коде появляются аномалии, о которых далее и пойдёт речь.</p>
+<h2 id="Model-мутант"><a href="#Model-мутант" class="headerlink" title="Model-мутант"></a>Model-мутант</h2><p><em>Model</em> - слой о предметной области нашей задачи. Решаемая задача, логика принятия решения может быть очень сложной. <em>Model</em> - это тот код ради которого, всё затевается. <em>Model</em> - это те строчки кода, которые будут приносить пользу. <em>Model</em> - это самый ответственный участок вашей программы. В Ваших же интересах сделать его максимально простым и понятным, отчистить его от всего лишнего.</p>
+<p>А что лишнего можно найти в <em>Model</em>, когда речь идет о WPF? Вот мой короткий список:</p>
+<ul>
+<li>ObservableCollection<t></t></li>
+<li>INotifyPropertyChanged</li>
+<li>Selected…</li>
+</ul>
+<p>По себе хорошо знаю, в <em>Model</em> очень легко прокрадываются аспекты UI/WPF. Одно дело когда в код <em>Model</em>-и прокрадываются типы, которые избыточны для неё и всего лишь добавляют зависимость на библиотеки UI, другое дело когда ставится под угрозу поддерживаемость кода.</p>
+<p>Когда я говорю о поддерживаемой системе, я надеюсь, что её самая важная часть будет защищена от случайных ошибок. А как мы защищаем свой код? Мы покрываем его тестами. Тесты фиксируют наши предположения о предметной области и код их реализующий. Тесты документируют ожидаемое поведение. Самые простые в написании тесты - это unit-тесты. Сможете вы написать unit-тест на метод, который внутри себя вызывает MessageBox.Show()? Попробуйте.</p>
+<p>Каноны чистого кода говорят нам, что интерфейсы должны быть минимально необходимыми как по размеру, так и по типам. А в случае с типами из UI это далеко не так.</p>
+<p>ObservableCollection - этот сложный тип коллекции, который нас волнует только в контексте привязки к интерфейсу. В модели вам в большинстве случаев достаточно IEnumarable.</p>
+<p>INotifyPropertyChanged - зачем нам где-то ещё нужен этот неудобный интерфейс? </p>
+<p>Свойства с префиксом Selected… - явно не то, о чем мы думаем описывая бизнес логику.</p>
+<p>Как надежно отчистить свои модели от всего лишнего? Для начала:</p>
+<ul>
+<li>создайте отдельную сборку для объектов предметной области</li>
+<li>строго следите, чтобы у этой сборки не появилось зависимостей от инфраструктурных библиотек, типа UI/WPF, баз данных, передачи данных.</li>
+</ul>
+<p>А теперь глубоко вздохните и примите следующее правило. </p>
+<blockquote>
+<p>Объект <em>Model</em> не может содержать свойств (property), только приватные поля, публичные методы и события. </p>
+</blockquote>
+<p>Как говорится, нет свойств - нет проблем. Теперь у Вас нет соблазна привязать элемент UI к свойству модели, а как следствие напихать в Model всего и побольше. Теперь у Вас нет соблазна оболванить модель превратив её в Entity/DTO для EntityFramework/NHibernate.</p>
+<p>Тут мы вспоминаем диаграмму Clean Architecture, где в центре ядро программы, которое ни от чего не зависит и описывает бизнес логику вашего приложения. Как же тогда добавлять к этому ядру другие аспекты вышей программы? Вариантов несколько, я предпочитаю: композиция и обёртки.</p>
+<p>Представим программу, в модели которой есть вот такой простой интерфейс пользователя:</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title">IUser</span></div><div class="line">&#123;</div><div class="line">    <span class="function"><span class="keyword">string</span> <span class="title">FirstName</span>(<span class="params"></span>)</span>;</div><div class="line">    <span class="function"><span class="keyword">string</span> <span class="title">LastName</span>(<span class="params"></span>)</span>;</div><div class="line">    <span class="function"><span class="keyword">string</span> <span class="title">Title</span>(<span class="params"></span>)</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Допустим у нас есть какая-то база данных, из которой мы считываем нужную нам информацию.</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">sealed</span> SQLiteUser: IUser &#123;...&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="keyword">sealed</span> PostgreUser: IUser &#123;...&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="keyword">sealed</span> SqlServerUser: IUser &#123;...&#125;</div></pre></td></tr></table></figure>
+<p>Выбирайте любой понравившийся вариант. Теперь мы хотим в одном месте GUI показать пользователя с полным именем и его титулом, а вдругом нам достаточно только его фамилии. Для этого мы сделаем две обёртки, которые полностью возьмут на себя эту работу.</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">sealed</span> <span class="keyword">class</span> <span class="title">UserPresentation</span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> IUser _user;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">UserPresentation</span>(<span class="params">IUser user</span>)</span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        _user = user;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">public</span> <span class="keyword">string</span> Text =&gt; <span class="string">$"<span class="subst">&#123;_user.Title()&#125;</span>. <span class="subst">&#123;_user.FirstName()&#125;</span> <span class="subst">&#123;_user.LastName()&#125;</span>"</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="keyword">sealed</span> <span class="keyword">class</span> <span class="title">UserShortPresentation</span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">readonly</span> IUser _user;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">UserShortPresentation</span>(<span class="params">IUser user</span>)</span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        _user = user;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">public</span> <span class="keyword">string</span> Text =&gt; _user.LastName();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="ViewModel-монстр"><a href="#ViewModel-монстр" class="headerlink" title="ViewModel-монстр"></a>ViewModel-монстр</h2><p><em>ViewModel</em> - это служебный слой программы, он склеивает логику вашей модели и интерфейс пользователя.<br>“Магия” привязок, за которую так любят XAML/MVVM, основана на трёх простых интерфейсах:</p>
+<ul>
+<li>INotifyPropertyChanged</li>
+<li>INotifyCollectionChanged</li>
+<li>ICommand</li>
+</ul>
+<p>Благодаря этим интерфейсам платформы мы может привязывать элементы графического интерфейса к свойствам и коллекциям контекста (DataContext) и получать обновления без лишних усилий, а взаимодействия с пользователем связывать с командами, которые может выполнить программа.</p>
+<p>С таким мощным инструментом легко потерять бдительность и накрутить “лапши”. Стоит увлечься, и в классы ViewModel скидывается всё подряд, что приводит к сотням и тысячам строк в этих классах. Это легко определить по следующим артефактам в коде:</p>
+<ul>
+<li>методы <em>_load…</em>;</li>
+<li>методы <em>_canExecute…</em>, <em>_execute…</em>;</li>
+<li>методы <em>_onSelect…</em>, <em>_onChanged…</em></li>
+</ul>
+<p>Предотвратить превращение ViewModel в монстра легко, потому что основных причин этому две.</p>
+<p>Первая причина - это вспомогательные классы <em>RelayCommand/DelegateCommand</em>. Все MVVM framework-и оказывают эту “медвежью услугу”. В крайней ситуации множество приватных методов, которые неявно связаны через состояние объекта ViewModel.<br>Команды должны быть отдельными классами, которые реализуют интерфейс ICommand. Команды через конструктор получают необходимые зависимости для выполнения своей работы, а их работа очень проста:</p>
+<ul>
+<li>определить когда команда может выполняться;</li>
+<li>определить когда это состояние меняется;</li>
+<li>делегировать работу модели</li>
+</ul>
+<p>Вторая - коллекции для представления набора данных. Во ViewModel определяется свойство типа ObservableCollection и приветные методы для манипуляции этой коллекцией, которые вызываются из методов-реализаций команд.<br>Следует делегировать обязанность по работе с коллекцией отдельному классу, в котором определяются все необходимые методы по манипуляции с этой коллекцией.</p>
+<p>Таким образом <em>ViewModel</em> как структурный элемент отвечает за определение:</p>
+<ul>
+<li>какие модели используются</li>
+<li>какие зависимости необходимы</li>
+<li>какие команды доступны</li>
+<li>какие доступны представления данных</li>
+</ul>
+<h2 id="View-чудовище"><a href="#View-чудовище" class="headerlink" title="View-чудовище"></a>View-чудовище</h2><p>Тут наблюдается общий симптом - <strong>огромные размеры, сотни и тысячи строк кода</strong>. Но в данном случае это код на XAML, это декларативное описание структуры представления. А XAML надо сказать не очень удобен для описания больших структур, поэтому как второй симптом в коде появляются <strong>поясняющие комментарии</strong>. И третий симптом, который поможет распознать вам чудовище - <strong>большая вложенность элементов раскладки</strong>, Grid-ы, StackPanel-и.</p>
+
+  </div>
+</article>
+
+    </div>
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2020 Anatoliy Severin
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/path/">Path</a></li>
+         
+          <li><a href="/CV/">CV</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-107396029-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+

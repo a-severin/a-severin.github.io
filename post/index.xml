@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Thirteenth notes</title>
+    <link>https://a-severin.github.io/post/</link>
+    <description>Recent content in Posts on Thirteenth notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://a-severin.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Разговоры об архитектуре</title>
+      <link>https://a-severin.github.io/post/talksaboutanarchitecture/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://a-severin.github.io/post/talksaboutanarchitecture/</guid>
+      <description>По моему наблюдению, когда обсуждают архитектуру системы, какие фреймворки выбрать, какие паттерны применить, какие инструменты и подходы использовать, собеседники находятся в очень оптимистичном контексте.
+Я бы сказал, что разговор подразумевает параллельную идеалистичную вселенную.
+Посудите сами.
+Когда затевается очередной холивар, участникам видится идеальный проект.
+Проект, в котором будет достаточно времени на внедрение всех процессов.
+Процессы, в которых будет уделено время на планирование, проектирование системы и рефакторинги.
+Когда топят за &amp;ldquo;быстрые&amp;rdquo; инструменты, свято верят, что вот этот прототип потом выкинут и напишут &amp;ldquo;нормально&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Половина 2020</title>
+      <link>https://a-severin.github.io/post/half-2020/</link>
+      <pubDate>Sat, 11 Jul 2020 23:58:01 +0000</pubDate>
+      
+      <guid>https://a-severin.github.io/post/half-2020/</guid>
+      <description>Ужасный 2020. Отсутствие отпуска и поездок в метро, конечно, сказываются на чтении книг.
+Но всё же удалось доползти корки &amp;ldquo;DDD&amp;rdquo; от Миллета и Тьюна.
+Концептуально всё шикарно описано, по технике есть есть вопросики.
+Благодаря этой книге узнал про EventStore, даже довелось его попробовать для чат-приложения.
+Впервые поучаствовал в review черновика книги. Это была &amp;ldquo;Junior Objects&amp;rdquo; от Егора Бугаенко.
+На мой вкус книжка получилась полезная. Надеюсь будет пользоваться спросом - учит хорошим практикам в разработке.</description>
+    </item>
+    
+    <item>
+      <title>Проект «Феникс»</title>
+      <link>https://a-severin.github.io/post/phoenix/</link>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://a-severin.github.io/post/phoenix/</guid>
+      <description>Прекрасный бизнес роман, прочел на одном дыхании. Конечно, это явная отсылка к Голдратту, но повествование захватывает внимание. Как и после &amp;ldquo;Цель&amp;rdquo; хочется ещё, хочется продолжения.
+По существу, на текущий день, этот роман ни чего не добавляет, об ТОС и DevOps уже сломано не мало копий. Хотя, кажется, что в большинстве мест ничего не меняется.</description>
+    </item>
+    
+    <item>
+      <title>Цель и Выбор Голдратта</title>
+      <link>https://a-severin.github.io/post/goldratt/</link>
+      <pubDate>Wed, 05 Dec 2018 11:12:00 +0000</pubDate>
+      
+      <guid>https://a-severin.github.io/post/goldratt/</guid>
+      <description>Не знаю, кто был первым в жанре &amp;ldquo;бизнес-роман&amp;rdquo;, но это определнно заслуживающий внимания формат. Декларация здравого смысла - зря потерянное время. Плавали, знаем. Системная инженерия. Ей тоже нужны несколько романов. &amp;ldquo;Выбор&amp;rdquo; - старые добрые диалоги, как если не далогами показать всю сложность восприятия идей?
+На собственном опыте понимаю, какая большая разница между &amp;ldquo;понять что-то самому&amp;rdquo; и &amp;ldquo;объянить это кмоу-то&amp;rdquo;. Поговорка &amp;ldquo;не можешь объяснить - не понял сам&amp;rdquo; - чушь. Всегда для начала нужно понять, находитесь ли вы со слушающим в одном контексте, потом поместить внимание в нужнуе русло логических цепочек.</description>
+    </item>
+    
+    <item>
+      <title>Масштабирование приложений. Выращивание сложных систем</title>
+      <link>https://a-severin.github.io/post/architectingforscale/</link>
+      <pubDate>Sat, 24 Nov 2018 18:22:00 +0000</pubDate>
+      
+      <guid>https://a-severin.github.io/post/architectingforscale/</guid>
+      <description>Долго и трудно читалась книжечка &amp;ldquo;Масштабирование приложений. Выращивание сложных систем&amp;rdquo;. Очень сухой текст. Крупными мазками по теме.
+Не хватает подробностей. Если технические пробелы восполнят книги &amp;ldquo;Высоконагруженные приложения. Программирование, масштабирование, поддержка&amp;rdquo;, &amp;ldquo;Эволюционная архитектура&amp;rdquo; и &amp;ldquo;Continuous delivery. Практика непрерывных апдейтов&amp;rdquo;, то на вопрос &amp;ldquo;Как масштабировать команду разработчиков?&amp;quot; найти ответ в книгах пока не представляется возможным.
+Книги &amp;ldquo;Как пасти котов&amp;rdquo; и &amp;ldquo;Искусство управления IT-проектами&amp;rdquo; об управлении одной командой и взаимоотнодениях между командами в уже большой компании, а &amp;ldquo;Бизнес с нуля.</description>
+    </item>
+    
+    <item>
+      <title>Элегантные объекты</title>
+      <link>https://a-severin.github.io/post/elegantobjects1/</link>
+      <pubDate>Fri, 16 Nov 2018 11:37:00 +0000</pubDate>
+      
+      <guid>https://a-severin.github.io/post/elegantobjects1/</guid>
+      <description>Вот и добрались руки до книги &amp;ldquo;Элегантные объекты&amp;rdquo; от Егора Бугаенко. Определенно это интересный формат для IT-литературы.
+Вставки из комментариев к блог-постам делают книгу и подаваемый материал живым. Получилась удачная середина между форматом серии книг &amp;ldquo;Head first&amp;rdquo;, в которой иногда персонажей, историй, иллюстрация уж слишком много, и форматом &amp;ldquo;Дефрагментация мозга&amp;rdquo; - компиляция книги из блог-постов или &amp;ldquo;Release it!&amp;rdquo;, где преобладает нарратив о днях былых и не хватает критического взгляда на подаваемый материал.</description>
+    </item>
+    
+    <item>
+      <title>IIS CORS</title>
+      <link>https://a-severin.github.io/post/iis-cors/</link>
+      <pubDate>Mon, 04 Sep 2017 22:03:09 +0000</pubDate>
+      
+      <guid>https://a-severin.github.io/post/iis-cors/</guid>
+      <description>Если так ещё раз случится и нужно будет делать кросс-доменные запросы из браузера, то:
+Лезем в настройки сервиса
+Проверяем что разрешен интересующий нас метод: Access-Control-Allow-Method
+Проверяем что разрешены интересующие нас заголовки: Access-Control-Allow-Headers
+Проверяем что разрешен интересующий нас домен: Access-Control-Allow-Origin
+для IIS настройка web.config выглядит, например, так:
+&amp;lt;httpProtocol&amp;gt;&amp;lt;customHeaders&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Origin&amp;quot; value=&amp;quot;*&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Max-Age&amp;quot; value=&amp;quot;18000&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Method&amp;quot; value=&amp;quot;POST&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Credentials&amp;quot; value=&amp;quot;true&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Headers&amp;quot; value=&amp;quot;*&amp;quot; /&amp;gt;&amp;lt;/customHeaders&amp;gt;&amp;lt;/httpProtocol&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Install Google Test on Ubuntu 16.04</title>
+      <link>https://a-severin.github.io/post/install-google-test-on-ubuntu-16-04/</link>
+      <pubDate>Mon, 04 Sep 2017 22:01:28 +0000</pubDate>
+      
+      <guid>https://a-severin.github.io/post/install-google-test-on-ubuntu-16-04/</guid>
+      <description>sudo apt isntall libgtest-devcd /usr/src/gtest/sudo cmake -DBUILD_SHARED_LIBS=ONsudo makesudo cp *.so /usr/lib</description>
+    </item>
+    
+    <item>
+      <title>Autodesk.DataManagement.Client.Framework.Vault.Forms.Library.Login</title>
+      <link>https://a-severin.github.io/post/autodesk-datamanagement-client-framework-vault-forms-library-login/</link>
+      <pubDate>Mon, 04 Sep 2017 22:00:32 +0000</pubDate>
+      
+      <guid>https://a-severin.github.io/post/autodesk-datamanagement-client-framework-vault-forms-library-login/</guid>
+      <description>If you reference to x64 Vault libs then checkout &amp;ldquo;Prefer 32-bit&amp;rdquo; in &amp;ldquo;Build&amp;rdquo; tab.</description>
+    </item>
+    
+    <item>
+      <title>DPE Automation</title>
+      <link>https://a-severin.github.io/post/dpe-automation/</link>
+      <pubDate>Mon, 04 Sep 2017 21:56:49 +0000</pubDate>
+      
+      <guid>https://a-severin.github.io/post/dpe-automation/</guid>
+      <description>Если нужно в автоматизации запускаемой через COM-интерфейс реализовать асинхронный интерфейс, то создать элемент UI не достаточно. Что бы при запуске через async/await асинхронной задачи происходило переключение в UI поток, должны быть выполнены два условия:
+  ContextSynchronization должен одним из тех, который реализует переключение между потоками, в нашем случае это WindowsFormSynchronizationContex, и об этом беспокоиться не стоит - первый созданный элемент UI, например, Form установит нужный контекст.
+  MessageLoop, вот его нужно запустить самому: Application.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>.NET on Thirteenth notes</title>
+    <link>https://a-severin.github.io/tags/.net/</link>
+    <description>Recent content in .NET on Thirteenth notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Sep 2017 22:03:09 +0000</lastBuildDate>
+    
+	<atom:link href="https://a-severin.github.io/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IIS CORS</title>
+      <link>https://a-severin.github.io/post/iis-cors/</link>
+      <pubDate>Mon, 04 Sep 2017 22:03:09 +0000</pubDate>
+      
+      <guid>https://a-severin.github.io/post/iis-cors/</guid>
+      <description>Если так ещё раз случится и нужно будет делать кросс-доменные запросы из браузера, то:
+Лезем в настройки сервиса
+Проверяем что разрешен интересующий нас метод: Access-Control-Allow-Method
+Проверяем что разрешены интересующие нас заголовки: Access-Control-Allow-Headers
+Проверяем что разрешен интересующий нас домен: Access-Control-Allow-Origin
+для IIS настройка web.config выглядит, например, так:
+&amp;lt;httpProtocol&amp;gt;&amp;lt;customHeaders&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Origin&amp;quot; value=&amp;quot;*&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Max-Age&amp;quot; value=&amp;quot;18000&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Method&amp;quot; value=&amp;quot;POST&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Credentials&amp;quot; value=&amp;quot;true&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Headers&amp;quot; value=&amp;quot;*&amp;quot; /&amp;gt;&amp;lt;/customHeaders&amp;gt;&amp;lt;/httpProtocol&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Autodesk.DataManagement.Client.Framework.Vault.Forms.Library.Login</title>
+      <link>https://a-severin.github.io/post/autodesk-datamanagement-client-framework-vault-forms-library-login/</link>
+      <pubDate>Mon, 04 Sep 2017 22:00:32 +0000</pubDate>
+      
+      <guid>https://a-severin.github.io/post/autodesk-datamanagement-client-framework-vault-forms-library-login/</guid>
+      <description>If you reference to x64 Vault libs then checkout &amp;ldquo;Prefer 32-bit&amp;rdquo; in &amp;ldquo;Build&amp;rdquo; tab.</description>
+    </item>
+    
+    <item>
+      <title>DPE Automation</title>
+      <link>https://a-severin.github.io/post/dpe-automation/</link>
+      <pubDate>Mon, 04 Sep 2017 21:56:49 +0000</pubDate>
+      
+      <guid>https://a-severin.github.io/post/dpe-automation/</guid>
+      <description>Если нужно в автоматизации запускаемой через COM-интерфейс реализовать асинхронный интерфейс, то создать элемент UI не достаточно. Что бы при запуске через async/await асинхронной задачи происходило переключение в UI поток, должны быть выполнены два условия:
+  ContextSynchronization должен одним из тех, который реализует переключение между потоками, в нашем случае это WindowsFormSynchronizationContex, и об этом беспокоиться не стоит - первый созданный элемент UI, например, Form установит нужный контекст.
+  MessageLoop, вот его нужно запустить самому: Application.</description>
+    </item>
+    
+  </channel>
+</rss>

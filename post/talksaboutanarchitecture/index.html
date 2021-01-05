@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Разговоры об архитектуре</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Roboto Mono', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: gray;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://a-severin.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%20Mono">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.73.0" />
+        
+
+        
+
+        
+            <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">Разговоры об архитектуре</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/cv/">CV</a></li>
+                            
+                                <li><a href="/books/">Books</a></li>
+                            
+                                <li><a href="/courses/">Courses</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:severin.a.u@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/a-severin/"><i class="fab fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/severin_a_u/"><i class="fab fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/anatoliy-severin/"><i class="fab fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Разговоры об архитектуре</h2>
+        <h5>August 14, 2020</h5>
+        
+<a href="https://a-severin.github.iotags/%D0%BC%D1%8B%D1%81%D0%BB%D0%B8-%D0%B2%D1%81%D0%BB%D1%83%D1%85"><kbd class="item-tag">Мысли вслух</kbd></a>
+
+
+    </div>
+
+    <div align="start" class="content"><p>По моему наблюдению, когда обсуждают архитектуру системы, какие фреймворки выбрать, какие паттерны применить, какие инструменты и подходы использовать, собеседники находятся в очень оптимистичном контексте.</p>
+<p>Я бы сказал, что разговор подразумевает параллельную идеалистичную вселенную.</p>
+<p>Посудите сами.</p>
+<p>Когда затевается очередной холивар, участникам видится идеальный проект.</p>
+<p>Проект, в котором будет достаточно времени на внедрение всех процессов.</p>
+<p>Процессы, в которых будет уделено время на планирование, проектирование системы и рефакторинги.</p>
+<p>Когда топят за &ldquo;быстрые&rdquo; инструменты, свято верят, что вот этот прототип потом выкинут и напишут &ldquo;нормально&rdquo;.</p>
+<p>Когда топят за &ldquo;гибкие&rdquo; инструменты, свято верят, что этот проект на года.</p>
+<p>Когда топят за &ldquo;крутые&rdquo; инструменты, свято верят, что в проекте всегда будут участвовать высоко-квалифицированные кадры.</p>
+<p>Я в этих вопросах пессимист.</p>
+<p>Завтра этот проект будет поддерживать вчерашний студент, поэтому выбираю максимально стандартные инструменты, с хорошей документацией.</p>
+<p>&ldquo;Быстрый&rdquo; и &ldquo;крутой&rdquo; инструмент, но основан на неявных подходах, на соглашениях об именовании, не поддерживается IDE - в топку.</p>
+<p>Время начальной разработки пренебрежимо мало по сравнению со временем поддержки. Если что-то затрудняет изучение кода - в топку.</p>
+<p>Читать и изменять код на порядки сложнее, чем его писать. Стиль кода заточен не на лаконичность, а на ясность и легкость внесения изменений.</p>
+<p>&ldquo;Инженерия требований?&rdquo; - &ldquo;Что это?&rdquo;</p>
+<p>&ldquo;Разработка требований к программному обеспечению&rdquo;, К. Вигерс - TLTR!</p>
+<p>&ldquo;Подумать над архитектурой? Написать проектную документацию?&rdquo; - ну вы сами знаете, &ldquo;нужно вчера&rdquo;, &ldquo;да, нам только попробовать&rdquo;, &ldquo;ещё будет время&rdquo;&hellip;</p>
+<p>У программиста в этой ситуации есть только три верных товарища: инструменты рефакторинга, тесты и документация.</p>
+<p>Только не вздумайте говорить о них менеджеру, а то вдруг он - эффективный.</p>
+<p>Если какое-то решение по инструментам, библиотекам, дизайну кода плохо поддаётся рефакторингу - в топку.</p>
+<p>Если плохо тестируется - в топку.</p>
+<p>Да, может, именно сейчас, в этот самый момент, вы не будете покрывать тестами то, что на кодили.</p>
+<p>Но, вряд ли, будущий вы скажете себе спасибо за не тестируемый код.</p>
+<p>Документация. Не, я не про ту макулатуру, которую называют ТЗ или ТП.</p>
+<p>Не про ту стопку бумаги, которую приносит менеджер или бизнес аналитик, на титульном листе которой важные дяди в галстуках ставят подписи.</p>
+<p>И не про тот идиотизм в комментариях к коду в стиле Капитана Очевидность, &ldquo;это есть получить ID&rdquo;.</p>
+<p>Я про то бесценное осознание, которое приходит во время кодирования. Этому эфемерному сокровищу нужно давать жизнь в виде печатных слов.</p>
+<p>На старте проекта вас озарило, что проект нужно разрабатывать по такому-то архитектурному паттерну? - быстро запишите это в readme.md, не задумывайтесь, не подбирайте слова, вылейте эту мысль в документ, как она сейчас крутится на языке - потом отредактируете.</p>
+<p>Расскажите будущему себе и тем, кто будет поддерживать этот проект, почему всё так, как есть.</p>
+<p>Про &ldquo;правильные&rdquo; комментарии к коду в сети полно информации - изучайте. Читайте &ldquo;Совершенный код&rdquo;, С. Макконел главу &ldquo;Процесс программирования с псевдокодом&rdquo;.</p>
+<p>Task-и/ticket-ы/issue-сы в вашей системе планирования - это не только забавное развлечение по перетаскиванию карточек между колонками, но и самое подходящее место для описания того, что и как в итоге было реализовано. Добавьте скрины или скринкасты UI, добавьте ссылку на вики-страницу со спецификацией алгоритма/API/структуры данных.</p>
+<p>В идеальном проекте всё будет хорошо, неважно что вы выберете. На то он и идеальный.</p>
+<p>В жизни, стратегия &ldquo;не сделать хуже&rdquo; на много надёжнее благих намерений.</p>
+</div>
+
+    
+    
+    
+
+    
+    
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a>.</p>
+        </footer>
+
+        
+
+        
+    </body>
+
+</html>
+

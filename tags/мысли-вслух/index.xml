@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Мысли вслух on Thirteenth notes</title>
+    <link>https://a-severin.github.io/tags/%D0%BC%D1%8B%D1%81%D0%BB%D0%B8-%D0%B2%D1%81%D0%BB%D1%83%D1%85/</link>
+    <description>Recent content in Мысли вслух on Thirteenth notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://a-severin.github.io/tags/%D0%BC%D1%8B%D1%81%D0%BB%D0%B8-%D0%B2%D1%81%D0%BB%D1%83%D1%85/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Разговоры об архитектуре</title>
+      <link>https://a-severin.github.io/post/talksaboutanarchitecture/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://a-severin.github.io/post/talksaboutanarchitecture/</guid>
+      <description>По моему наблюдению, когда обсуждают архитектуру системы, какие фреймворки выбрать, какие паттерны применить, какие инструменты и подходы использовать, собеседники находятся в очень оптимистичном контексте.
+Я бы сказал, что разговор подразумевает параллельную идеалистичную вселенную.
+Посудите сами.
+Когда затевается очередной холивар, участникам видится идеальный проект.
+Проект, в котором будет достаточно времени на внедрение всех процессов.
+Процессы, в которых будет уделено время на планирование, проектирование системы и рефакторинги.
+Когда топят за &amp;ldquo;быстрые&amp;rdquo; инструменты, свято верят, что вот этот прототип потом выкинут и напишут &amp;ldquo;нормально&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

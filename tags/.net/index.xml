@@ -6,11 +6,7 @@
     <description>Recent content in .NET on Thirteenth notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Sep 2017 22:03:09 +0000</lastBuildDate>
-    
-	<atom:link href="https://a-severin.github.io/tags/.net/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 04 Sep 2017 22:03:09 +0000</lastBuildDate><atom:link href="https://a-severin.github.io/tags/.net/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IIS CORS</title>
       <link>https://a-severin.github.io/post/iis-cors/</link>
@@ -23,7 +19,7 @@
 Проверяем что разрешены интересующие нас заголовки: Access-Control-Allow-Headers
 Проверяем что разрешен интересующий нас домен: Access-Control-Allow-Origin
 для IIS настройка web.config выглядит, например, так:
-&amp;lt;httpProtocol&amp;gt;&amp;lt;customHeaders&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Origin&amp;quot; value=&amp;quot;*&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Max-Age&amp;quot; value=&amp;quot;18000&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Method&amp;quot; value=&amp;quot;POST&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Credentials&amp;quot; value=&amp;quot;true&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Headers&amp;quot; value=&amp;quot;*&amp;quot; /&amp;gt;&amp;lt;/customHeaders&amp;gt;&amp;lt;/httpProtocol&amp;gt;</description>
+&amp;lt;httpProtocol&amp;gt;&amp;lt;customHeaders&amp;gt;&amp;lt;add name=&amp;#34;Access-Control-Allow-Origin&amp;#34; value=&amp;#34;*&amp;#34; /&amp;gt;&amp;lt;add name=&amp;#34;Access-Control-Max-Age&amp;#34; value=&amp;#34;18000&amp;#34; /&amp;gt;&amp;lt;add name=&amp;#34;Access-Control-Allow-Method&amp;#34; value=&amp;#34;POST&amp;#34; /&amp;gt;&amp;lt;add name=&amp;#34;Access-Control-Allow-Credentials&amp;#34; value=&amp;#34;true&amp;#34; /&amp;gt;&amp;lt;add name=&amp;#34;Access-Control-Allow-Headers&amp;#34; value=&amp;#34;*&amp;#34; /&amp;gt;&amp;lt;/customHeaders&amp;gt;&amp;lt;/httpProtocol&amp;gt; </description>
     </item>
     
     <item>

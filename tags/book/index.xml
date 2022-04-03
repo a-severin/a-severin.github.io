@@ -6,11 +6,7 @@
     <description>Recent content in Book on Thirteenth notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2020 23:58:01 +0000</lastBuildDate>
-    
-	<atom:link href="https://a-severin.github.io/tags/book/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 11 Jul 2020 23:58:01 +0000</lastBuildDate><atom:link href="https://a-severin.github.io/tags/book/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Половина 2020</title>
       <link>https://a-severin.github.io/post/half-2020/</link>
@@ -52,7 +48,7 @@
       
       <guid>https://a-severin.github.io/post/architectingforscale/</guid>
       <description>Долго и трудно читалась книжечка &amp;ldquo;Масштабирование приложений. Выращивание сложных систем&amp;rdquo;. Очень сухой текст. Крупными мазками по теме.
-Не хватает подробностей. Если технические пробелы восполнят книги &amp;ldquo;Высоконагруженные приложения. Программирование, масштабирование, поддержка&amp;rdquo;, &amp;ldquo;Эволюционная архитектура&amp;rdquo; и &amp;ldquo;Continuous delivery. Практика непрерывных апдейтов&amp;rdquo;, то на вопрос &amp;ldquo;Как масштабировать команду разработчиков?&amp;quot; найти ответ в книгах пока не представляется возможным.
+Не хватает подробностей. Если технические пробелы восполнят книги &amp;ldquo;Высоконагруженные приложения. Программирование, масштабирование, поддержка&amp;rdquo;, &amp;ldquo;Эволюционная архитектура&amp;rdquo; и &amp;ldquo;Continuous delivery. Практика непрерывных апдейтов&amp;rdquo;, то на вопрос &amp;ldquo;Как масштабировать команду разработчиков?&amp;rdquo; найти ответ в книгах пока не представляется возможным.
 Книги &amp;ldquo;Как пасти котов&amp;rdquo; и &amp;ldquo;Искусство управления IT-проектами&amp;rdquo; об управлении одной командой и взаимоотнодениях между командами в уже большой компании, а &amp;ldquo;Бизнес с нуля.</description>
     </item>
     

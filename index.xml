@@ -6,11 +6,7 @@
     <description>Recent content on Thirteenth notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://a-severin.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://a-severin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Разговоры об архитектуре</title>
       <link>https://a-severin.github.io/post/talksaboutanarchitecture/</link>
@@ -67,7 +63,7 @@
       
       <guid>https://a-severin.github.io/post/architectingforscale/</guid>
       <description>Долго и трудно читалась книжечка &amp;ldquo;Масштабирование приложений. Выращивание сложных систем&amp;rdquo;. Очень сухой текст. Крупными мазками по теме.
-Не хватает подробностей. Если технические пробелы восполнят книги &amp;ldquo;Высоконагруженные приложения. Программирование, масштабирование, поддержка&amp;rdquo;, &amp;ldquo;Эволюционная архитектура&amp;rdquo; и &amp;ldquo;Continuous delivery. Практика непрерывных апдейтов&amp;rdquo;, то на вопрос &amp;ldquo;Как масштабировать команду разработчиков?&amp;quot; найти ответ в книгах пока не представляется возможным.
+Не хватает подробностей. Если технические пробелы восполнят книги &amp;ldquo;Высоконагруженные приложения. Программирование, масштабирование, поддержка&amp;rdquo;, &amp;ldquo;Эволюционная архитектура&amp;rdquo; и &amp;ldquo;Continuous delivery. Практика непрерывных апдейтов&amp;rdquo;, то на вопрос &amp;ldquo;Как масштабировать команду разработчиков?&amp;rdquo; найти ответ в книгах пока не представляется возможным.
 Книги &amp;ldquo;Как пасти котов&amp;rdquo; и &amp;ldquo;Искусство управления IT-проектами&amp;rdquo; об управлении одной командой и взаимоотнодениях между командами в уже большой компании, а &amp;ldquo;Бизнес с нуля.</description>
     </item>
     
@@ -87,7 +83,7 @@
       <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://a-severin.github.io/cv/</guid>
-      <description>Skills:  Desktop Software Development (C#.NET/WPF) CAD/CAM/CAE Automation (Dassault Systemes CATIA, Autodesk Inventor) PLM/PDM Automation (Dassault Systemes ENOVIA, Autodesk Vault) Android Development (Java/Kotlin)  Experience JSC POINT August 2018 - until now
+      <description>Skills:  Desktop Software Development (C#.NET/WPF) CAD/CAM/CAE Automation (Dassault Systemes CATIA, Autodesk Inventor) PLM/PDM Automation (Dassault Systemes ENOVIA, Autodesk Vault) Android Development (Java/Kotlin)  Experience JSC POINT August 2018 - March 2022
 Senior Software Engineer Development of Android client to Autodesk Vault
  Java/Kotlin, Android Jetpack RxJava, Retrofit Material Design Espresso  Design and development of project task management system
  .NET4.8, C#, WPF, Telerik UI for WPF SQLite, LiteDB WixSharp MSTest, FlaUI, Appium  Design and development of integration services</description>
@@ -105,7 +101,7 @@ Senior Software Engineer Development of Android client to Autodesk Vault
 Проверяем что разрешены интересующие нас заголовки: Access-Control-Allow-Headers
 Проверяем что разрешен интересующий нас домен: Access-Control-Allow-Origin
 для IIS настройка web.config выглядит, например, так:
-&amp;lt;httpProtocol&amp;gt;&amp;lt;customHeaders&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Origin&amp;quot; value=&amp;quot;*&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Max-Age&amp;quot; value=&amp;quot;18000&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Method&amp;quot; value=&amp;quot;POST&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Credentials&amp;quot; value=&amp;quot;true&amp;quot; /&amp;gt;&amp;lt;add name=&amp;quot;Access-Control-Allow-Headers&amp;quot; value=&amp;quot;*&amp;quot; /&amp;gt;&amp;lt;/customHeaders&amp;gt;&amp;lt;/httpProtocol&amp;gt;</description>
+&amp;lt;httpProtocol&amp;gt;&amp;lt;customHeaders&amp;gt;&amp;lt;add name=&amp;#34;Access-Control-Allow-Origin&amp;#34; value=&amp;#34;*&amp;#34; /&amp;gt;&amp;lt;add name=&amp;#34;Access-Control-Max-Age&amp;#34; value=&amp;#34;18000&amp;#34; /&amp;gt;&amp;lt;add name=&amp;#34;Access-Control-Allow-Method&amp;#34; value=&amp;#34;POST&amp;#34; /&amp;gt;&amp;lt;add name=&amp;#34;Access-Control-Allow-Credentials&amp;#34; value=&amp;#34;true&amp;#34; /&amp;gt;&amp;lt;add name=&amp;#34;Access-Control-Allow-Headers&amp;#34; value=&amp;#34;*&amp;#34; /&amp;gt;&amp;lt;/customHeaders&amp;gt;&amp;lt;/httpProtocol&amp;gt; </description>
     </item>
     
     <item>
@@ -114,7 +110,7 @@ Senior Software Engineer Development of Android client to Autodesk Vault
       <pubDate>Mon, 04 Sep 2017 22:01:28 +0000</pubDate>
       
       <guid>https://a-severin.github.io/post/install-google-test-on-ubuntu-16-04/</guid>
-      <description>sudo apt isntall libgtest-devcd /usr/src/gtest/sudo cmake -DBUILD_SHARED_LIBS=ONsudo makesudo cp *.so /usr/lib</description>
+      <description>sudo apt isntall libgtest-devcd /usr/src/gtest/sudo cmake -DBUILD_SHARED_LIBS=ONsudo makesudo cp *.so /usr/lib </description>
     </item>
     
     <item>
@@ -152,7 +148,7 @@ Senior Software Engineer Development of Android client to Autodesk Vault
       <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://a-severin.github.io/books/</guid>
-      <description>IT Complete 2022 059 - &amp;ldquo;Under the Hood of .NET Memory Management&amp;rdquo;, Chris Farrell, Nick Harrison
+      <description>IT 2022 059 - &amp;ldquo;Under the Hood of .NET Memory Management&amp;rdquo;, Chris Farrell, Nick Harrison
 2021 058 - &amp;ldquo;Внедрение зависимостей на платформе .NET. 2-е издание&amp;rdquo;, Симан Марк, Дерсен Стивен ван
 057 - &amp;ldquo;Еще более эффективный Agile&amp;rdquo;, Макконнелл С.
 2020 056 - &amp;ldquo;The Unicorn Project: A Novel about Developers, Digital Disruption, and Thriving in the Age of Data&amp;rdquo;, Gene Kim

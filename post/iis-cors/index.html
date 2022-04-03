@@ -56,7 +56,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.73.0" />
+ <meta name="generator" content="Hugo 0.96.0" />
         
 
         
@@ -133,13 +133,13 @@
 <p>Проверяем что разрешены интересующие нас заголовки: Access-Control-Allow-Headers</p>
 <p>Проверяем что разрешен интересующий нас домен: Access-Control-Allow-Origin</p>
 <p>для IIS настройка web.config выглядит, например, так:</p>
-<pre><code>&lt;httpProtocol&gt;
+<pre tabindex="0"><code>&lt;httpProtocol&gt;
   &lt;customHeaders&gt;
-    &lt;add name=&quot;Access-Control-Allow-Origin&quot; value=&quot;*&quot; /&gt;
-    &lt;add name=&quot;Access-Control-Max-Age&quot; value=&quot;18000&quot; /&gt;
-    &lt;add name=&quot;Access-Control-Allow-Method&quot; value=&quot;POST&quot; /&gt;
-    &lt;add name=&quot;Access-Control-Allow-Credentials&quot; value=&quot;true&quot; /&gt;
-    &lt;add name=&quot;Access-Control-Allow-Headers&quot; value=&quot;*&quot; /&gt;
+    &lt;add name=&#34;Access-Control-Allow-Origin&#34; value=&#34;*&#34; /&gt;
+    &lt;add name=&#34;Access-Control-Max-Age&#34; value=&#34;18000&#34; /&gt;
+    &lt;add name=&#34;Access-Control-Allow-Method&#34; value=&#34;POST&#34; /&gt;
+    &lt;add name=&#34;Access-Control-Allow-Credentials&#34; value=&#34;true&#34; /&gt;
+    &lt;add name=&#34;Access-Control-Allow-Headers&#34; value=&#34;*&#34; /&gt;
   &lt;/customHeaders&gt;
 &lt;/httpProtocol&gt;
 </code></pre></div>

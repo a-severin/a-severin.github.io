@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Book on Thirteenth notes</title>
-    <link>https://a-severin.github.io/tags/book/</link>
+    <link>https://a-severin.ru/tags/book/</link>
     <description>Recent content in Book on Thirteenth notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2020 23:58:01 +0000</lastBuildDate><atom:link href="https://a-severin.github.io/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Jul 2020 23:58:01 +0000</lastBuildDate><atom:link href="https://a-severin.ru/tags/book/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Половина 2020</title>
-      <link>https://a-severin.github.io/post/half-2020/</link>
+      <link>https://a-severin.ru/post/half-2020/</link>
       <pubDate>Sat, 11 Jul 2020 23:58:01 +0000</pubDate>
       
-      <guid>https://a-severin.github.io/post/half-2020/</guid>
+      <guid>https://a-severin.ru/post/half-2020/</guid>
       <description>Ужасный 2020. Отсутствие отпуска и поездок в метро, конечно, сказываются на чтении книг.
 Но всё же удалось доползти корки &amp;ldquo;DDD&amp;rdquo; от Миллета и Тьюна.
 Концептуально всё шикарно описано, по технике есть есть вопросики.
@@ -23,30 +23,30 @@
     
     <item>
       <title>Проект «Феникс»</title>
-      <link>https://a-severin.github.io/post/phoenix/</link>
+      <link>https://a-severin.ru/post/phoenix/</link>
       <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://a-severin.github.io/post/phoenix/</guid>
+      <guid>https://a-severin.ru/post/phoenix/</guid>
       <description>Прекрасный бизнес роман, прочел на одном дыхании. Конечно, это явная отсылка к Голдратту, но повествование захватывает внимание. Как и после &amp;ldquo;Цель&amp;rdquo; хочется ещё, хочется продолжения.
 По существу, на текущий день, этот роман ни чего не добавляет, об ТОС и DevOps уже сломано не мало копий. Хотя, кажется, что в большинстве мест ничего не меняется.</description>
     </item>
     
     <item>
       <title>Цель и Выбор Голдратта</title>
-      <link>https://a-severin.github.io/post/goldratt/</link>
+      <link>https://a-severin.ru/post/goldratt/</link>
       <pubDate>Wed, 05 Dec 2018 11:12:00 +0000</pubDate>
       
-      <guid>https://a-severin.github.io/post/goldratt/</guid>
+      <guid>https://a-severin.ru/post/goldratt/</guid>
       <description>Не знаю, кто был первым в жанре &amp;ldquo;бизнес-роман&amp;rdquo;, но это определнно заслуживающий внимания формат. Декларация здравого смысла - зря потерянное время. Плавали, знаем. Системная инженерия. Ей тоже нужны несколько романов. &amp;ldquo;Выбор&amp;rdquo; - старые добрые диалоги, как если не далогами показать всю сложность восприятия идей?
 На собственном опыте понимаю, какая большая разница между &amp;ldquo;понять что-то самому&amp;rdquo; и &amp;ldquo;объянить это кмоу-то&amp;rdquo;. Поговорка &amp;ldquo;не можешь объяснить - не понял сам&amp;rdquo; - чушь. Всегда для начала нужно понять, находитесь ли вы со слушающим в одном контексте, потом поместить внимание в нужнуе русло логических цепочек.</description>
     </item>
     
     <item>
       <title>Масштабирование приложений. Выращивание сложных систем</title>
-      <link>https://a-severin.github.io/post/architectingforscale/</link>
+      <link>https://a-severin.ru/post/architectingforscale/</link>
       <pubDate>Sat, 24 Nov 2018 18:22:00 +0000</pubDate>
       
-      <guid>https://a-severin.github.io/post/architectingforscale/</guid>
+      <guid>https://a-severin.ru/post/architectingforscale/</guid>
       <description>Долго и трудно читалась книжечка &amp;ldquo;Масштабирование приложений. Выращивание сложных систем&amp;rdquo;. Очень сухой текст. Крупными мазками по теме.
 Не хватает подробностей. Если технические пробелы восполнят книги &amp;ldquo;Высоконагруженные приложения. Программирование, масштабирование, поддержка&amp;rdquo;, &amp;ldquo;Эволюционная архитектура&amp;rdquo; и &amp;ldquo;Continuous delivery. Практика непрерывных апдейтов&amp;rdquo;, то на вопрос &amp;ldquo;Как масштабировать команду разработчиков?&amp;rdquo; найти ответ в книгах пока не представляется возможным.
 Книги &amp;ldquo;Как пасти котов&amp;rdquo; и &amp;ldquo;Искусство управления IT-проектами&amp;rdquo; об управлении одной командой и взаимоотнодениях между командами в уже большой компании, а &amp;ldquo;Бизнес с нуля.</description>
@@ -54,10 +54,10 @@
     
     <item>
       <title>Элегантные объекты</title>
-      <link>https://a-severin.github.io/post/elegantobjects1/</link>
+      <link>https://a-severin.ru/post/elegantobjects1/</link>
       <pubDate>Fri, 16 Nov 2018 11:37:00 +0000</pubDate>
       
-      <guid>https://a-severin.github.io/post/elegantobjects1/</guid>
+      <guid>https://a-severin.ru/post/elegantobjects1/</guid>
       <description>Вот и добрались руки до книги &amp;ldquo;Элегантные объекты&amp;rdquo; от Егора Бугаенко. Определенно это интересный формат для IT-литературы.
 Вставки из комментариев к блог-постам делают книгу и подаваемый материал живым. Получилась удачная середина между форматом серии книг &amp;ldquo;Head first&amp;rdquo;, в которой иногда персонажей, историй, иллюстрация уж слишком много, и форматом &amp;ldquo;Дефрагментация мозга&amp;rdquo; - компиляция книги из блог-постов или &amp;ldquo;Release it!&amp;rdquo;, где преобладает нарратив о днях былых и не хватает критического взгляда на подаваемый материал.</description>
     </item>
